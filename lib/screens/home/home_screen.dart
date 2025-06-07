@@ -142,7 +142,7 @@ class _BannerCarouselState extends State<_BannerCarousel> {
     return Column(
       children: [
         SizedBox(
-          height: 140.h,
+          height: 100.h,
           child: PageView.builder(
             controller: _pageController,
             itemCount: bannerImages.length,
@@ -375,7 +375,7 @@ class _ProductGrid extends StatelessWidget {
       'oldPrice': 79999,
       'discount': 13,
       'brand': 'Samsung',
-      'image': 'assets/images/iphone8_mobile_dual_side.png',
+      'image':'assets/images/samsung.jpg',
       'rating': 4.5,
       'reviews': 1200,
       'stock': true,
@@ -387,7 +387,7 @@ class _ProductGrid extends StatelessWidget {
       'oldPrice': 149999,
       'discount': 13,
       'brand': 'Apple',
-      'image': 'assets/images/leather_jacket_4.png',
+      'image': 'assets/images/macbook.jpg',
       'rating': 4.8,
       'reviews': 800,
       'stock': false,
@@ -399,7 +399,7 @@ class _ProductGrid extends StatelessWidget {
       'oldPrice': 12999,
       'discount': 23,
       'brand': 'Sony',
-      'image': 'assets/images/acer_laptop_var_4.png',
+      'image': 'assets/images/sony.webp',
       'rating': 4.3,
       'reviews': 600,
       'stock': true,
@@ -420,7 +420,7 @@ class _ProductGrid extends StatelessWidget {
       }, childCount: products.length),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        mainAxisExtent: 420.h,
+        mainAxisExtent: 450.h,
         crossAxisSpacing: 12.w,
         mainAxisSpacing: 12.h,
       ),
@@ -463,7 +463,7 @@ class _ProductCard extends StatelessWidget {
                   ),
                   child: Image.asset(
                     product['image'],
-                    height: 160.h,
+                    height: 200.h,
                     width: double.infinity,
                     fit: BoxFit.cover,
                     errorBuilder: (context, error, stackTrace) {
